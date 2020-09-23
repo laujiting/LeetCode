@@ -20,6 +20,11 @@ public class NumReverse {
          * 此时等价于1) res ==INT_MAX/10 && pop>7
          *         2) res > INT_MAX/10
          */
+        /**
+         * 时间复杂度O(log10(x))，x中的位数是log10(x)
+         * 空间复杂度O(1)
+         *
+         */
         int res = 0;
         //需要考虑负数的情况，因此判断条件不是x>0
         while (x != 0) {
